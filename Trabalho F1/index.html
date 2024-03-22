@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript" src="race.js"></script>
+        <title>F1 BET</title>
+    </head>
+    <header>
+        <h1>APOSTA DE F1</h1>
+        <h3 id="walletValue"></h3>
+    </header>
+    <body onload="init()">
+        <div class="race-track">
+            <div class="car" id="Carro1"></div>
+            <div class="car" id="Carro2"></div>
+            <div class="car" id="Carro3"></div>
+            <div class="car" id="Carro4"></div>
+            <div class="car" id="Carro5"></div>
+            <div class="finalLine"></div>
+        </div>
+        <label for="">Digite o valor da sua aposta</label>
+        <input id="amountInput" type="number" placeholder="Valor mínimo de R$ 5" min="5">
+        <button onclick="bet()">APOSTAR</button>
+        <section>
+            <select name="select" id="drivers-list">
+                <option value="Carro1">carro 1</option>
+                <option value="Carro2">carro 2</option>
+                <option value="Carro3">carro 3</option>
+                <option value="Carro4">carro 4</option>
+                <option value="Carro5">carro 5</option>
+              </select>
+        </section>
+    </body>
+</html>
